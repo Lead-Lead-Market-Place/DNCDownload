@@ -33,6 +33,7 @@ var loginArgs = {
 
 var options = {};
 soap.createClient(url, options, function (err, client) {
+    if(err) console.log(err)
 
     console.log('---------- createClient ---------');
 
@@ -41,7 +42,7 @@ soap.createClient(url, options, function (err, client) {
             var token = result.LoginResult.value;
             console.log('LoginOK');
 
-            SubmitDeltaFileRequest(client, token);
+            // SubmitDeltaFileRequest(client, token);
         } else if (err != null) {
             console.log('LoginFailed : ' + err);
 
