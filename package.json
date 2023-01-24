@@ -1,0 +1,20 @@
+{
+  "name": "dnc2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "decompress": "^4.2.1",
+    "fs": "0.0.1-security",
+    "mysql2": "^3.0.1",
+    "readline": "^1.3.0",
+    "request": "^2.88.2",
+    "strong-soap": "^3.4.1"
+  }
+}
